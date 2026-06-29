@@ -1,0 +1,137 @@
+/* Рабочий стол Windows 95 — классический бирюзовый цвет */
+.desktop-bg {
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 128, 128, 0.4); /* Полупрозрачный бирюзовый поверх игры */
+    justify-content: flex-end;
+    color: #000000;
+    /* Явно задаем отображение по умолчанию */
+    display: flex; 
+}
+
+/* Панель задач (Taskbar) */
+.taskbar {
+    height: 40px;
+    width: 100%;
+    background-color: #c0c0c0;
+    /* Трехмерная рамка Win95 (светлый верх, темный низ) */
+    border-top-width: 2px;
+    border-top-color: #ffffff;
+    border-bottom-width: 2px;
+    border-bottom-color: #000000;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 4px;
+    padding-right: 4px;
+    display: flex;
+}
+
+/* Кнопка Пуск в стиле Win95 */
+.start-button {
+    height: 28px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: #c0c0c0;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 0px; /* Никаких скруглений */
+    
+    /* Эффект выпуклой кнопки */
+    border-top-width: 2px;
+    border-top-color: #ffffff;
+    border-left-width: 2px;
+    border-left-color: #ffffff;
+    border-bottom-width: 2px;
+    border-bottom-color: #808080;
+    border-right-width: 2px;
+    border-right-color: #808080;
+    
+    margin-right: 10px;
+}
+
+/* Эффект нажатия на кнопку Пуск (кнопка вдавливается) */
+.start-button:active {
+    border-top-width: 2px;
+    border-top-color: #000000;
+    border-left-width: 2px;
+    border-left-color: #000000;
+    border-bottom-width: 2px;
+    border-bottom-color: #ffffff;
+    border-right-width: 2px;
+    border-right-color: #ffffff;
+    padding-top: 2px; /* Небольшой сдвиг текста внутрь */
+    padding-left: 9px;
+}
+
+/* Меню ПУСК */
+.start-menu {
+    position: absolute;
+    bottom: 42px;
+    left: 4px;
+    width: 240px;
+    height: 300px;
+    background-color: #c0c0c0;
+    
+    /* Выпуклая рамка окна */
+    border-top-width: 2px;
+    border-top-color: #ffffff;
+    border-left-width: 2px;
+    border-left-color: #ffffff;
+    border-bottom-width: 2px;
+    border-bottom-color: #000000;
+    border-right-width: 2px;
+    border-right-color: #000000;
+    
+    flex-direction: row;
+    padding: 2px;
+    display: flex;
+}
+
+/* Темно-синяя боковая плашка "Windows 95" */
+.start-sidebar {
+    width: 30px;
+    background-color: #000080; /* Чистый темно-синий цвет без ломающих градиентов */
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* Вертикальный текст на синей плашке */
+.user-profile {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    rotate: -90deg; 
+    margin-bottom: 20px;
+}
+
+/* Содержимое меню */
+.start-content {
+    flex-grow: 1;
+    padding-left: 6px;
+    padding-top: 4px;
+    padding-right: 4px;
+}
+
+/* Элементы меню */
+.menu-item {
+    background-color: transparent;
+    border-width: 0;
+    border-radius: 0;
+    color: #000000;
+    text-align: left;
+    padding: 6px;
+    margin-bottom: 2px;
+}
+
+/* Выделение строки при наведении мыши */
+.menu-item:hover {
+    background-color: #000080;
+    color: #ffffff;
+}
+
+/* Класс скрытия элементов через display: none */
+.hidden {
+    display: none;
+}

@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/PauseMenu.uss?fileID=7433441132597879392&amp;guid=035d96ae5bde7df42ac74e072286d996&amp;type=3#PauseMenu"/>
+    <ui:VisualElement name="Desktop" picking-mode="Ignore" class="desktop-bg">
+        <ui:VisualElement name="ShortcutsContainer" picking-mode="Ignore" class="shortcuts-container"/>
+        <ui:VisualElement name="Taskbar" picking-mode="Position" class="taskbar">
+            <ui:Button text="Пуск" name="StartButton" picking-mode="Position" class="start-button"/>
+            <ui:VisualElement name="TaskbarSeparator" picking-mode="Ignore" class="separator"/>
+        </ui:VisualElement>
+        <ui:VisualElement name="StartMenu" picking-mode="Position" class="start-menu hidden" style="display: none;">
+            <ui:VisualElement name="StartMenuSidebar" picking-mode="Ignore" class="start-sidebar">
+                <ui:Label text="Win95" class="user-profile"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="StartMenuContent" picking-mode="Ignore" class="start-content">
+                <ui:Button text="Параметры" name="SettingsButton" picking-mode="Position" class="menu-item"/>
+                <ui:Button text="Справка" name="HelpButton" picking-mode="Position" class="menu-item"/>
+                <ui:Button text="Завершение работы..." name="ShutdownButton" picking-mode="Position" class="menu-item shutdown"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
